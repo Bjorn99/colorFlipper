@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>colorFlipper</title>
+    <link rel="stylesheet" href="/css/tailwind.css" />
+  </head>
+  <body class="m-2 bg-gray-300">
+    <div class="container mx-auto p-5">
+      <nav
+        class="
+          flex flex-wrap
+          items-center
+          justify-between
+          p-7
+          bg-green-500
+          rounded-2xl
+          shadow-2xl
+        "
+      >
+        <h1 class="text-3xl font-bold">
+          <a href="#" alt="Logo"
+            ><span class="text-indigo-800">Hola Amigos! </span></a
+          >
+        </h1>
+
+        <div class="flex md:hidden">
+          <button id="hamburger">
+            <img
+              class="toggle block"
+              src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png"
+              width="40"
+              height="40"
+            />
+            <img
+              class="toggle hidden"
+              src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png"
+              width="40"
+              height="40"
+            />
+          </button>
+        </div>
+
+        <div
+          class="
+            toggle
+            hidden
+            sm:flex
+            md:flex
+            w-full
+            md:w-auto
+            mt-5
+            sm:pt-2
+            sm:space-y-2
+            lg:space-x-7
+            md:mt-0
+            border-t-2 border-blue-900
+            md:border-none
+          "
+        >
+          <a
+            href="index.html"
+            class="
+              text-2xl
+              font-medium
+              hover:bg-yellow-500
+              hover:text-white
+              tracking-wider
+              rounded-full
+              hover:-translate-y-1
+              active:bg-pink-500
+              transform
+              transition
+              block
+              md:inline-block
+              text-indigo-900
+              p-2
+              sm:px-5
+              border-2 border-indigo-900
+              md:border-none
+            "
+            >colorFlipper</a
+          >
+          <a
+            href="hex.html"
+            class="
+              text-2xl
+              font-medium
+              hover:bg-pink-600
+              hover:text-white
+              rounded-full
+              tracking-wider
+              hover:-translate-y-1
+              active:bg-yellow-400
+              transform
+              transition
+              block
+              md:inline-block
+              text-indigo-900
+              m-2
+              p-2
+              border-2 border-blue-900
+              md:border-none
+            "
+            >hexColorGenerator</a
+          >
+        </div>
+      </nav>
+    </div>
+
+    <!-- Main container colorFlipper-->
+
+    <div class="sm:max-w-xl container mx-auto px-5 lg:max-w-xl">
+      <main
+        class="
+          container
+          mx-auto
+          px-
+          max-w-full max-h-full
+          text-center
+          rounded-2xl
+        "
+      >
+        <div>
+          <h2
+            class="
+              py-2
+              text-center text-4xl text-white
+              font-bold
+              tracking-wider
+              bg-black
+              rounded-2xl
+              mt-48
+            "
+          >
+            Background Color: <span class="color">#f1f5f8</span>
+          </h2>
+          <div class="mt-4 space-x-1">
+            <button
+              class="
+                btn
+                inline-block
+                px-5
+                py-3
+                rounded-lg
+                shadow-lg
+                bg-indigo-500
+                hover:bg-green-700
+                hover:-translate-y-0.5
+                focus:outline-none
+                focus:ring
+                focus:ring-offset-2
+                focus:ring-indigo-500
+                focus:ring-opacity-50
+                active:bg-green-800
+                transform
+                transition
+                text-white
+                uppercase
+                tracking-wider
+                font-semibold
+                text-sm
+                sm:text-base
+              "
+            >
+              click me
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- JavaScript-->
+    <script src="/js/main.js"></script>
+  </body>
+</html>

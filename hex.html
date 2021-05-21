@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>colorFlipper</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/tailwind.css" />
+  </head>
+
+  <body class="m-2 bg-gray-300">
+    <div class="container mx-auto p-5">
+      <nav
+        class="
+          flex flex-wrap
+          items-center
+          justify-between
+          p-7
+          bg-green-500
+          rounded-2xl
+          shadow-2xl
+        "
+      >
+        <h1 class="text-2xl font-bold">
+          <a href="index.html" alt="Logo"
+            ><span class="text-indigo-800">Hola Amigos! </span></a
+          >
+        </h1>
+
+        <div class="flex md:hidden">
+          <button id="hamburger">
+            <img
+              class="toggle block"
+              src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png"
+              width="40"
+              height="40"
+            />
+            <img
+              class="toggle hidden"
+              src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png"
+              width="40"
+              height="40"
+            />
+          </button>
+        </div>
+
+        <div
+          class="
+            toggle
+            hidden
+            sm:flex
+            md:flex
+            w-full
+            md:w-auto
+            mt-5
+            sm:pt-2
+            sm:space-y-2
+            lg:space-x-7
+            md:mt-0
+            border-t-2 border-blue-900
+            md:border-none
+          "
+        >
+          <a
+            href="index.html"
+            class="
+              text-2xl
+              font-medium
+              hover:bg-yellow-500
+              hover:text-white
+              tracking-wider
+              rounded-full
+              hover:-translate-y-1
+              active:bg-pink-500
+              transform
+              transition
+              block
+              md:inline-block
+              text-indigo-900
+              p-2
+              mt-2
+              sm:px-5
+              border-2 border-indigo-900
+              md:border-none
+              sm:border-none
+            "
+            >colorFlipper</a
+          >
+          <a
+            href="hex.html"
+            class="
+              text-2xl
+              font-medium
+              hover:bg-pink-600
+              hover:text-white
+              rounded-full
+              tracking-wider
+              hover:-translate-y-1
+              active:bg-yellow-400
+              transform
+              transition
+              block
+              md:inline-block
+              text-indigo-900
+              m-2
+              p-2
+              border-2 border-blue-900
+              md:border-none
+            "
+            ><span>hexColorGenerator</span></a
+          >
+        </div>
+      </nav>
+    </div>
+
+    <main class="grid items-center min-h-screen">
+      <div
+        class="
+          sm:max-w-xl
+          container
+          mx-auto
+          lg:max-w-xl
+          text-center
+          p-4
+          rounded
+          mb-10
+        "
+      >
+        <h2
+          class="
+            text-4xl
+            font-semibold
+            text-white
+            pt-3
+            bg-black
+            mb-4
+            pb-4
+            rounded
+          "
+        >
+          backgroundColor :
+          <span class="color uppercase">#f1f5f8</span>
+        </h2>
+
+        <button
+          class="
+            btn btn-primary
+            inline-block
+            uppercase
+            font-extrabold
+            p-4
+            rounded
+            border-solid
+            shadow-lg
+            bg-indigo-500
+            hover:bg-green-700
+            hover:-translate-y-0.5
+            focus:outline-none
+            focus:ring
+            focus:ring-offset-2
+            focus:ring-indigo-500
+            focus:ring-opacity-50
+            active:bg-green-800
+            transform
+            transition
+            text-white
+          "
+          id="btn"
+        >
+          click me
+        </button>
+      </div>
+    </main>
+
+    <script src="js/hex.js"></script>
+  </body>
+</html>
